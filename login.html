@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairy's Lingerie/Iniciar Sesion</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registrarse</button>
+            </div>
+            <div class="social-icons">
+                <img src="/img/login/login-reg-img/fb.png">
+                <img src="/img/login/login-reg-img/tw.png">
+                <img src="/img/login/login-reg-img/gp.png">
+                <div class="regresar-web">
+                    <a href="index.html">Regresar</a>
+                  </div>
+            </div>
+            
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="chech-box"><span>¿Recordar Contraseña?</span>
+                <button type="submit" class="submit-btn">Iniciar</button>
+            </form>
+             
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo Electronico" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="chech-box"><span>Aceptar Terminos & Condiciones</span>
+                <button type="submit" class="submit-btn">Iniciar</button>
+               
+               
+            </form>
+             
+
+        </div>
+    </div>
+    
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0"
+        }
+    </script>
+</body>
+</html>
